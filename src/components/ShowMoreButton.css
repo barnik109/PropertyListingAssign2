@@ -1,0 +1,21 @@
+
+.show-more-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.show-more-button {
+    padding: 12px;
+    background-color: white;
+    color: blue;
+    border: 1px solid blue;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.show-more-button:hover {
+    background-color: #571adb;
+    color: white;
+}

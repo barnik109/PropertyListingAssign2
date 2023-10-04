@@ -1,0 +1,196 @@
+/* src/components/PropertyCard.css */
+@import '@fortawesome/fontawesome-svg-core/styles.css';
+.property-card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 25%;
+    transition: transform 0.3s ease-in-out;
+    background-color: #F9FAFB;
+    position: relative;
+}
+
+.property-card:hover {
+    transform: scale(1.05);
+}
+
+.property-card img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.property-details {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.bath {
+    position: relative;
+}
+
+.bath .bath-icon {
+    position: absolute;
+    top: -20px;
+    left: 20%;
+    transform: translateX(-50%);
+    font-size:smaller;
+    color: rgba(63, 60, 60, 0.801);
+}
+
+.rooms {
+    position: relative;
+}
+
+.rooms .rooms-icon {
+    position: absolute;
+    top: -20px;
+    left: 20%;
+    transform: translateX(-50%);
+    font-size: smaller;
+    color: rgba(63, 60, 60, 0.801);
+}
+
+.beds {
+    position: relative;
+}
+
+.beds .beds-icon {
+    position: absolute;
+    top: -20px;
+    left: 20%;
+    transform: translateX(-50%);
+    font-size: smaller;
+    color: rgba(63, 60, 60, 0.801);
+}
+
+.psize {
+    position: relative;
+}
+
+.psize .psize-icon {
+    position: absolute;
+    top: -20px;
+    left: 20%;
+    transform: translateX(-50%);
+    font-size: smaller;
+    color: rgba(63, 60, 60, 0.801);
+}
+
+.popular-label {
+    position: absolute;
+    bottom: 0;
+    left: -10px;
+    background-color: #571adb;
+    color: #fff;
+    padding: 8px 12px;
+    border-radius: 8px;
+    margin-bottom: 223px;
+    z-index: 1;
+}
+
+.popular-label::before {
+    content: '';
+    position: absolute;
+    bottom: -7px;
+    left: 2%;
+    border-width: 10px;
+    border-style: solid;
+    border-color: transparent transparent #571adb transparent;
+    transform: translateX(-50%) rotate(-90deg);
+    z-index: -1;
+}
+
+#postcode {
+    font-size: 15px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+#address {
+    font-size: 18px;
+    color: black;
+    overflow: hidden;
+    margin-top: 5px;
+}
+
+.property-info {
+    display: flex;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.property-info p {
+    font-size: 15px;
+    color: #333;
+    margin-right: 20px;
+}
+
+.property-info p:last-child {
+    margin-right: 0;
+}
+
+.price-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#price {
+    font-size: 20px;
+    color: blue;
+}
+
+#month {
+    font-size: small;
+    color: #333;
+}
+
+.read-more-button {
+    padding: 12px;
+    background-color: white;
+    color: blue;
+    border: 1px solid blue;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.action-button.rent-button {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    margin-top: 15px;
+    background-color: white;
+    color: blue;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 20px;
+    font-weight: bold;
+    margin-left: 12px;
+}
+
+
+.action-button.love-react-button {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: white;
+    color: blue;
+    margin-top: 15px;
+    border: none;
+    padding: 8px;
+    cursor: pointer;
+    border-radius: 20px;
+    font-weight: bold;
+    margin-right: 12px;
+}
